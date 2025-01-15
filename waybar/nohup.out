@@ -1,7 +1,0 @@
-[2025-01-11 09:04:28.799] [info] Using configuration file /home/mars/.config/waybar/config.jsonc
-[2025-01-11 09:04:28.802] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
-[2025-01-11 09:04:28.802] [info] Using CSS file /home/mars/.config/waybar/style.css
-[2025-01-11 09:04:28.813] [info] Hyprland IPC starting
-[2025-01-11 09:04:28.815] [info] Loading persistent workspaces from Hyprland workspace rules
-[2025-01-11 09:04:29.041] [info] Bar configured (width: 1912, height: 37) for output: eDP-1
-Gdk-Message: 09:05:07.010: Error reading events from display: Broken pipe
