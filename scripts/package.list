@@ -115,6 +115,8 @@ docker-compose
 openvpn
 v2ray
 nekobox
+happ-desktop-bin
+
 
 qemu-system-x86
 virtualbox
