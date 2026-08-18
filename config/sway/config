@@ -1,11 +1,12 @@
-output * bg ~/wayland/walls/nasa.png fill
+output * bg /home/user/wayland/walls/gradient.jpg fill
 set $super Mod4
 set $alt Mod1
 
 #swafx
-# default_border pixel 2
-# default_floating_border pixel 2
-# corner_radius 6
+default_border pixel 2
+default_floating_border pixel 2
+corner_radius 6
+animation_duration_ms 250
 
 font pango:MartianMono NFM Cond Med 10
 floating_modifier $super
@@ -13,6 +14,7 @@ floating_modifier $super
 exec export XDG_CURRENT_DESKTOP=sway
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_DESKTOP XDG_SESSION_TYPE
 exec --no-startup-id swaync
+exec --no-startup-id easygamma
 exec --no-startup-id nm-applet
 exec --no-startup-id ~/wayland/scripts/idle_sway.sh
 exec --no-startup-id wlsunset -l 57.1522 -L 65.5272 -t 4500 -T 6000
@@ -109,7 +111,6 @@ hide_edge_borders none
 gaps inner 4
 gaps outer 2
 
-
 bindsym --to-code $super+Shift+v exec  ~/wayland/scripts/clip.sh
 bindsym --to-code $super+o exec tofi-drun --auto-accept-single false | xargs -I{} sh -c '{}'
 bindsym --to-code super+Shift+w exec ~/wayland/scripts/screen.sh
@@ -120,12 +121,12 @@ exec --no-startup-id wl-paste -t text/plain -w cliphist store
 input * {
     xkb_layout us,ru
     xkb_options grp:win_space_toggle
+    pointer_accel -0.1
 }
 
 input "type:touchpad" {
     tap enabled
-
-    pointer_accel -0.4
+    pointer_accel -0.1
     natural_scroll enabled
 }
 
@@ -146,4 +147,6 @@ for_window [app_id="pomotroid"] move position 747 1
 for_window [app_id="easygamma"] floating enable
 for_window [app_id="easygamma"] move position 1424 1
 for_window [app_id="swayimg"] floating enable
-
+for_window [app_id="org.pulseaudio.pavucontrol"] floating enable
+for_window [app_id="org.pulseaudio.pavucontrol"] resize set 430 486
+for_window [app_id="org.pulseaudio.pavucontrol"] move position 1475 1

@@ -1,8 +1,7 @@
-## advanced dots (arch x wayland)
+## advanced sway dots
 ![sway1](https://raw.githubusercontent.com/Jahamars/wayland/refs/heads/main/photos/review1.png)
 
 > **note** 
-> - sway and hyprland are configured identically - they use same keybindings, scripts and programs
 > - the repo must be cloned into the home directory (e.g. `/home/user/wayland`)
 
 
@@ -10,7 +9,7 @@
 
 ## keybindings
 
-### wm (hyprland/sway)
+### wm (sway)
 |                                            |                                      |
 | ------------------------------------------ | ------------------------------------ |
 | `Super + T`                                | Terminal                             |
