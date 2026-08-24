@@ -8,7 +8,7 @@ else
     case $chosen in
         Restart*)  swaymsg reload ;;
         Quit*)     swaymsg exit ;;
-        Lock*)     swaylock -f -i ~/wayland/walls/nasa.png ;;
+        Lock*)     swaylock -f -i ~/wayland/walls/gradient.jpg ;;
         Suspend)   systemctl suspend ;;
         Reboot)    systemctl reboot ;;
         Shutdown)  systemctl poweroff ;;
